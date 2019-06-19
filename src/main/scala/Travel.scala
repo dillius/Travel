@@ -21,8 +21,10 @@ object Travel {
       CabinPrice("CB", "S2", 270.00),
     )
 
+    println("Best Group Rates: ")
+    println(rateProvider.getBestGroupPrices(rates, cabinPrices))
 
-
+    println()
 
     //Promotion Service Exercise
     val promotionService = new PromotionService()
